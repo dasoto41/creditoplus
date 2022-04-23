@@ -178,6 +178,7 @@
                 
                 fieldset {
                     border-radius: 25px;
+                    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
                     border-color: rgb(255, 151, 113);
                     border: solid;
                     margin: 10px;
@@ -195,6 +196,11 @@
                     margin-top: 50px;
                     padding: 15px;
                     color: rgb(30, 56, 56);
+                    transition: font-size 2s;
+                }
+                
+                .tituloSection:hover {
+                    font-size: 50px;
                 }
                 
                 .imagenesCard {
@@ -263,14 +269,26 @@
                 }
                 
                 .botonForm {
-                    border-radius: 25px;
-                    background-color: rgb(246, 218, 208);
-                    font-family: 'lato', sans-serif;
-                    font-size: 15px;
-                    width: 100px;
-                    font-weight: bold;
-                    padding: 15px;
+                    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%)
+                }
+                
+                .botonForm {
+                    margin: 10px;
+                    padding: 15px 45px;
                     text-align: center;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                    background-size: 200% auto;
+                    color: white;
+                    box-shadow: 0 0 20px #eee;
+                    border-radius: 10px;
+                    display: block;
+                }
+                
+                .botonForm:hover {
+                    background-position: right center;
+                    color: #fff;
+                    text-decoration: none;
                 }
                 /* page: preguntas frecuentes */
                 
@@ -278,6 +296,18 @@
                     font-family: 'lato', sans-serif;
                     font-size: 30px;
                     padding: 20px;
+                    animation-duration: 2s;
+                    animation-name: show;
+                    animation-iteration-count: infinite;
+                }
+                
+                @keyframes show {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
                 }
                 
                 .recuadroPreg {
@@ -290,14 +320,18 @@
                 .itemlista {
                     display: inline-block;
                     height: 15px;
-                    font-size: 20px;
+                    font-size: 30px;
                     padding: 20px;
                     font-weight: bold;
                     text-decoration: underline;
                 }
                 
+                .itemlista:hover {
+                    font-size: 40px;
+                }
+                
                 ul p {
-                    font-size: 18px;
+                    font-size: 29px;
                 }
                 
                 ol li {
