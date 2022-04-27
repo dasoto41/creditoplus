@@ -3,6 +3,10 @@
                     padding: 0px;
                     box-sizing: border-box;
                 }
+                
+                .recuadro {
+                    padding: 25px;
+                }
                 /* header */
                 
                 .header {
@@ -13,88 +17,17 @@
                     height: 200px;
                 }
                 
-                .header nav>ul {
-                    display: flex;
-                    justify-content: space-between;
-                    list-style: none;
-                    align-items: flex-end;
-                    width: 100%;
-                }
-                
                 .header img {
                     width: 200px;
                     height: 200px;
                 }
                 
-                .header nav>ul>li {
-                    width: 20%;
-                }
-                
-                .header nav>ul>li>a {
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    color: white;
-                }
-                
-                .submenu {
-                    background-color: blue;
-                    position: absolute;
-                }
-                
-                .submenu li a {
-                    display: none;
-                    padding: 15px;
-                    color: #fff;
-                    text-decoration: none
-                }
-                
-                .menu li:hover .submenu li a {
-                    display: block;
-                }
-                /* fin header */
-                /* body */
-                
                 body {
                     background-color: rgb(153, 255, 205)
                 }
                 
-                .titular {
-                    font-family: 'lato', sans-serif;
-                    border-radius: 15px;
-                    color: black;
-                    background-color: rgb(255, 245, 109);
-                    line-height: 1.4;
-                    text-align: justify;
-                    padding: 15px;
-                    font-size: 20px;
-                    margin-top: 40px;
-                }
-                
-                .estiloRequisitos {
-                    font-family: 'lato', sans-serif;
-                    padding-left: 30px;
-                    list-style-type: square;
-                    line-height: 1.7;
-                }
-                
                 ul {
                     list-style-type: none;
-                }
-                
-                .requisitos {
-                    padding-top: 30px;
-                    margin: 5px;
-                    color: black;
-                    font-size: 20px;
-                    font-family: 'lato', sans-serif;
-                }
-                
-                .imagenRequisitos {
-                    position: relative;
-                    top: 40px;
-                    left: 250px;
-                    width: 700px;
                 }
                 
                 .botonwsp {
@@ -104,35 +37,6 @@
                     bottom: 10px;
                     right: 30px;
                     border-radius: 50px;
-                }
-                
-                .tituloTabla {
-                    font-family: 'lato', sans-serif;
-                    font-size: 20px;
-                    color: black;
-                    margin-left: 30px;
-                    margin-top: 60px;
-                }
-                
-                .tabla {
-                    border: none;
-                    text-align: center;
-                    padding: 15px;
-                    margin-top: 30px;
-                }
-                
-                .tabla tr th {
-                    width: 200px;
-                    height: 70px;
-                    color: black;
-                    border: solid;
-                }
-                
-                .tabla tr td {
-                    width: 200px;
-                    height: 70px;
-                    color: black;
-                    border: solid;
                 }
                 
                 .imagenUbi {
@@ -153,13 +57,11 @@
                 /* footer */
                 
                 .footer {
-                    margin-bottom: 10px;
-                    display: inline;
-                    position: relative;
-                    top: 100px;
                     background-color: rgb(255, 245, 109);
                     color: black;
-                    margin-left: 40px;
+                    font-family: 'lato', sans-serif;
+                    height: 20px;
+                    font-size: 15px;
                 }
                 /* page:sobre nosotros */
                 /* main */
@@ -183,6 +85,10 @@
                     border: solid;
                     margin: 10px;
                     width: 100%;
+                }
+                
+                .listaSucu {
+                    list-style-type: square;
                 }
                 /* main sobre nosotros */
                 
@@ -222,6 +128,8 @@
                 
                 .fieldsetcontacto {
                     background-color: rgb(255, 245, 109);
+                    margin: 5px;
+                    padding: 5px;
                 }
                 
                 .tituloForm {
@@ -343,7 +251,7 @@
                     border-radius: 25px;
                     border: solid;
                     background-color: rgb(255, 245, 109);
-                    padding: 15px;
+                    padding: 35px;
                     width: 100%;
                     height: 100%;
                 }
