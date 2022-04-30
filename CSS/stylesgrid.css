@@ -201,3 +201,27 @@ table tr td {
     border-radius: 25px;
     padding: 20px;
 }
+
+
+/*mediaq index*/
+
+@media screen and (max-width:320px) {
+    .tituloUbi {
+        margin-left: 10px;
+    }
+    .imgFlecha {
+        display: none;
+    }
+    table tr th {
+        font-size: 15px;
+        text-align: center;
+    }
+    table tr td {
+        font-size: 10px;
+        text-align: center;
+    }
+    .footer {
+        height: auto;
+        ;
+    }
+}

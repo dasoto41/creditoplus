@@ -17,10 +17,12 @@
                     height: 200px;
                 }
                 
-                .header img {
+                header img {
                     width: 200px;
                     height: 200px;
+                    border-radius: 25px;
                 }
+                /*index*/
                 
                 body {
                     background-color: rgb(153, 255, 205)
@@ -53,7 +55,6 @@
                     font-size: 20px;
                     margin-top: 10px;
                 }
-                /* fin body */
                 /* footer */
                 
                 .footer {
@@ -90,7 +91,6 @@
                 .listaSucu {
                     list-style-type: square;
                 }
-                /* main sobre nosotros */
                 
                 .tituloSection {
                     text-align: center;
@@ -139,43 +139,6 @@
                     font-weight: bold;
                 }
                 
-                .label {
-                    font-family: 'lato', sans-serif;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    display: inline;
-                    width: 20px;
-                    margin: 10px;
-                    padding: 50px;
-                    text-align: left;
-                }
-                
-                .input {
-                    display: inline;
-                    margin: 10px;
-                    width: 1000px;
-                }
-                
-                .momentoContacto {
-                    display: inline-block;
-                    font-family: 'lato', sans-serif;
-                    font-size: 20px;
-                    margin: 20px;
-                    padding: 15px;
-                }
-                
-                .input2 {
-                    display: inline-block;
-                    width: 300px;
-                }
-                
-                .opciones {
-                    display: block;
-                    font-size: 15px;
-                    font-weight: bold;
-                }
-                
                 .botonForm {
                     background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%)
                 }
@@ -218,26 +181,6 @@
                     }
                 }
                 
-                .recuadroPreg {
-                    border: solid;
-                    border-radius: 25px;
-                    padding: 20px;
-                    margin-top: 150px;
-                }
-                
-                .itemlista {
-                    display: inline-block;
-                    height: 15px;
-                    font-size: 30px;
-                    padding: 20px;
-                    font-weight: bold;
-                    text-decoration: underline;
-                }
-                
-                .itemlista:hover {
-                    font-size: 40px;
-                }
-                
                 ul p {
                     font-size: 29px;
                 }
@@ -261,10 +204,32 @@
                     text-align: center;
                 }
                 
-                .imgSucu {
-                    position: relative;
-                    width: 600px;
-                    height: 300px;
-                    margin: 10px 10px 10px 400px;
+                .imgSuc {
+                    height: 700px;
                     border-radius: 25px;
+                    margin: 15px;
+                }
+                
+                .tituloSuc {
+                    padding: 40px;
+                }
+                /*mediaq sucursales*/
+                
+                @media screen and (max-width:320px) {
+                    .footer {
+                        height: auto;
+                    }
+                    .imgSuc {
+                        width: auto;
+                        height: auto;
+                    }
+                    header img {
+                        margin-top: 70px;
+                    }
+                    .header {
+                        background-color: rgb(153, 255, 205);
+                    }
+                    .tituloSuc {
+                        margin-top: 50px;
+                    }
                 }
